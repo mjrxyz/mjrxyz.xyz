@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cumberland1911.xyz</title>
+    <title>Cumberland1911.xyz - Blog</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #333;
+            color: #ff9000;
         }
 
         header {
@@ -32,23 +33,35 @@
             margin: 0 15px;
         }
 
-        section {
+        nav a:hover,
+        nav a:visited,
+        nav a:active {
+            color: white;
+        }
+
+        nav a.current {
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
             padding: 20px;
         }
 
-        article {
+        .blog-post {
             background-color: #333;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             padding: 20px;
         }
-        p  {
-            color: #dbdbdb;
+
+        .blog-post h3 {
+            color: #ff9000;
         }
 
-        h2 {
-            color: #ff9000;
+        .blog-post p {
+            color: #dbdbdb;
         }
 
         footer {
@@ -65,23 +78,30 @@
 <body>
     <header>
         <h1>Cumberland1911</h1>
-        <p>Homepage</p>
+        <p>Blog</p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="current">Blog</a>
         <a href="tutorials.html">Tutorials</a>
         <a href="reviews.html">Reviews</a>
         <a href="recipes.html">Recipes</a>
     </nav>
 
-    <section>
-        <article>
-            <h2>Under Construction</h2>
-            <p>Come back later...</p>
-        </article>
-    </section>
+    <main>
+        <div class="blog-post">
+            <h3>Blog Post Title 1</h3>
+            <p>This is the content of the first blog post. Lorem ipsum dolor sit amet...</p>
+        </div>
+
+        <div class="blog-post">
+            <h3>Blog Post Title 2</h3>
+            <p>This is the content of the second blog post. Lorem ipsum dolor sit amet...</p>
+        </div>
+
+
+    </main>
 
     <footer>
         <p>This website contains 0% spyware and is 100% based.</p>
